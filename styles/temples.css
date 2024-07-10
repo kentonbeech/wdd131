@@ -1,0 +1,103 @@
+* {
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(15, 15, 88, 0.747);
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header .navbar {
+    display: block;
+    justify-content: space-between;
+    justify-content: center;
+    width: 50%;
+    font-size: large;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 45px;
+}
+
+.navbar li a:hover {
+    color: aquamarine;
+}
+
+.active {
+    color: yellow;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+
+
+main h2 {
+    text-align: center;
+    margin: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+main .images {
+    display: grid;
+    grid-template-columns: 90%;
+    place-content: center;
+    text-align: center;
+}
+
+main .images figcaption {
+    padding-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    height: 15svh;
+	background-color: rgba(15, 15, 88, 0.747);
+	color: white;
+}
+
+footer #currentyear {
+    color: yellow;
+}
+
+footer .footer-text-one {
+    font-size: large;
+    line-height: 2rem;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    main .images {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+}
