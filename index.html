@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta author="Kenton Beech" />
+		<meta
+			name="description"
+			content="WDD 131 - Dynamic Web Fundamentals for Kenton Beech. This project contains all the files required for the coursework throughout the semester."
+		/>
+		<link rel="stylesheet" href="styles/base.css" />
+		<!-- LINKS TO MONTSERRAT FONT -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="scripts/getdates.js" defer></script>
+		<script src="scripts/main.js" defer></script>
+		<title>WDD 131 – Dynamic Web Fundamentals - Kenton Beech</title>
+	</head>
+	<body>
+		<header id="Header">
+			<div id="TopHeader">
+				<h1>
+					WDD 131: Dynamic Web Fundamentals -
+					<span class="full-name">Kenton R. Beech</span>
+				</h1>
+
+				<div id="HamburgerIcon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div id="Nav">
+				<ul>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">Canvas</a></li>
+					<li><a href="#">Scripture</a></li>
+					<li><a href="#">Final Project</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main id="HomeMain">
+			<div id="Container">
+				<div id="GridContainer">
+					<div id="Card-1" class="cards">
+						<div class="card-heading">
+							<h3>About Me</h3>
+						</div>
+
+						<div class="card-content">
+							<div id="Profile">
+								<p>
+									My name is Rubia and I go by Ruby. I was born in South Africa
+									and live with my family in Madagascar. I am currently working
+									as an administrative legal assistant at a law firm. My
+									children are my world and I love spending time with them. I
+									love to travel and I love to learn new things.
+								</p>
+							</div>
+
+							<div id="ProfileImg">
+								<img src="images/portrait.jpg" alt="" />
+							</div>
+
+							<div id="Country">
+								<h3>East London, South Africa</h3>
+								<hr />
+
+								<div id="CountryContent">
+									<div id="ImageAndCaption">
+										<img src="images/south-africa.jpg" alt="" />
+										<span class="flag-caption">South African Flag</span>
+									</div>
+
+									<p>
+										East London is a coastal city in South Africa’s Eastern
+										Cape, known for its sandy beaches, scenic riverfront, and
+										busy port. It blends colonial charm with modern growth and
+										is a popular spot for surfing and tourism.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="Card-2" class="cards">
+						<div class="card-heading">
+							<h3>Web Dev Resources</h3>
+						</div>
+
+						<div class="card-content">
+							<div id="ResourcesLinks">
+								<ul>
+									<li>
+										<a href="https://www.udemy.com/" target="_blank">Udemy</a>
+									</li>
+									<li>
+										<a href="https://www.w3schools.com/" target="_blank"
+											>W3 Schools</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://stackoverflow.com/questions"
+											target="_blank"
+											>StackOverflow</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer id="Footer">
+			<div id="FooterContent">
+				<span id="TopRow">
+					<p>©<span id="currentyear"></span> 🍕 Kenton Beech 🍕 South Africa</p>
+				</span>
+
+				<span id="BottomRow">
+					<p>Last Modification: <span id="lastModified"></span></p>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>
