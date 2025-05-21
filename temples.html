@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="This page is showcasing a grid layout of a list of temples."
+		/>
+		<meta name="author" content="Kenton Beech" />
+
+		<link rel="icon" href="/images/temple.png" type="image/png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="scripts/temples.js" defer></script>
+		<link rel="stylesheet" href="styles/temples.css" />
+		<link rel="stylesheet" href="styles/temples-large.css" />
+
+		<title>LDS Temples</title>
+	</head>
+
+	<body>
+		<header>
+			<div id="HeaderContainer">
+				<div id="HeaderTitle">
+					<h1>Temple Album</h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Old</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Large</a></li>
+						<li><a href="#">Small</a></li>
+					</ul>
+				</nav>
+
+				<div id="Hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div id="MainContent">
+				<div id="MainTitle">
+					<h2>Home</h2>
+				</div>
+
+				<div id="GridContainer">
+					<figure>
+						<img
+							src="images/durban-temple.jpg"
+							alt="Durban, South Africa Temple"
+							loading="lazy"
+						/>
+						<figcaption>Durban, South Africa Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img src="images/hawaii-temple.jpg" alt="Laie, Hawaii Temple" />
+						<figcaption>Laie, Hawaii Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/preston-temple.jpg"
+							alt="Preston, England Temple"
+							loading="lazy"
+						/>
+						<figcaption>Preston, England Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/sydney-temple.jpg"
+							alt="Sydney, Australia Temple"
+							loading="lazy"
+						/>
+						<figcaption>Sydney, Australia Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/albuquerque-temple.jpg"
+							alt="Albuquerque, New Mexico Temple"
+							loading="lazy"
+						/>
+						<figcaption>Albuquerque, New Mexico Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/belem_brazil_temple.jpg"
+							alt="Belém, Brazil Temple"
+							loading="lazy"
+						/>
+						<figcaption>Belém, Brazil Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/bern-switzerland-temple.jpg"
+							alt="Bern, Switzerland Temple"
+							loading="lazy"
+						/>
+						<figcaption>Bern, Switzerland Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/bountiful-temple.jpg"
+							alt="Bountiful, Utah Temple"
+							loading="lazy"
+						/>
+						<figcaption>Bountiful, Utah Temple</figcaption>
+					</figure>
+
+					<figure>
+						<img
+							src="images/rome-temple.jpg"
+							alt="Rome, Italy Temple"
+							loading="lazy"
+						/>
+						<figcaption>Rome, Italy Temple</figcaption>
+					</figure>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="FooterContent">
+				<span id="TopRow">
+					<p>©<span id="currentyear"></span> 🍕 Kenton Beech 🍕 South Africa</p>
+				</span>
+
+				<span id="BottomRow">
+					<p>Last Modification: <span id="lastModified"></span></p>
+				</span>
+			</div>
+		</footer>
+
+		<div id="Lightbox" class="lightbox">
+			<span class="close">&times;</span>
+			<img class="lightbox-content" id="LightboxImg" />
+		</div>
+	</body>
+</html>
