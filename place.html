@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Kenton Beech" />
+		<meta
+			name="description"
+			content="A webpage, showcasing my favorite place I have visited."
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles/place.css" />
+		<script src="scripts/place.js" defer></script>
+		<script src="scripts/getdates.js" defer></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div id="HeaderContainer">
+				<h1>England</h1>
+				<hr />
+			</div>
+		</header>
+
+		<main>
+			<img src="images/cornwall.jpg" alt="" srcset="min-width: 980px" />
+			<div id="Card-1" class="card">
+				<div id="Heading1" class="heading">
+					<h2>Data</h2>
+				</div>
+
+				<div class="card-content">
+					<div class="stat">
+						<span><strong>Area:</strong></span> 130 279 km²
+					</div>
+					<div class="stat">
+						<span><strong>Population:</strong></span> 56,489,800
+					</div>
+					<div class="stat">
+						<span><strong>Capital:</strong></span> London
+					</div>
+					<div class="stat">
+						<span><strong>Languages:</strong></span> English
+					</div>
+					<div class="stat">
+						<span><strong>Currency:</strong></span> Pounds (GBP)
+					</div>
+					<div class="stat">
+						<span><strong>Time Zone:</strong></span> GMT+1
+					</div>
+					<div class="stat">
+						<span><strong>Calling Code:</strong></span> +44
+					</div>
+					<div class="stat">
+						<span><strong>Internet TLD:</strong></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="Card-2" class="card">
+				<div id="Heading2" class="heading">
+					<h2>Weather</h2>
+				</div>
+
+				<div class="card-content">
+					<div class="stat">
+						<span><strong>Temperature:</strong></span> <span id="Temp"></span>
+					</div>
+					<div class="stat">
+						<span><strong>Conditions:</strong></span> <span id="Cond"></span>
+					</div>
+					<div class="stat">
+						<span><strong>Wind:</strong></span> <span id="Speed"></span>
+					</div>
+					<div class="stat">
+						<span><strong>Wind Chill:</strong></span> <span id="Chill"></span>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="FooterContainer">
+				<div id="TopText">
+					<p>
+						©<span id="currentyear"></span> 🏖️ Kenton Beech 🏖️ Cornwall, England
+					</p>
+				</div>
+
+				<div id="BottomText">
+					<p>Last Modified: <span id="lastModified"></span></p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

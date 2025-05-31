@@ -1,0 +1,172 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--bg-color: #007c91;
+}
+
+body {
+	margin: 0;
+}
+
+/* HEADER STYLES */
+
+#HeaderContainer {
+	background: var(--bg-color);
+}
+
+#HeaderContainer h1 {
+	text-align: center;
+	margin: 0;
+	padding: 30px 0;
+	color: white;
+}
+
+hr {
+	background: #dcc7a1;
+	height: 15px;
+	margin: 0;
+	border: none;
+}
+
+/* END OF HEADER STYLES */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* MAIN STYLES */
+
+main {
+	/* background: url(/images/cornwall.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh; */
+	position: relative;
+}
+
+main picture {
+	max-width: min-content;
+	max-height: min-content;
+}
+
+main img {
+	max-width: 100%;
+}
+
+.card {
+	background: #ffffff90;
+	max-width: 250px;
+	width: 100%;
+	padding: 15px 20px;
+	position: absolute;
+	margin: 30px;
+}
+
+.card > .heading {
+	background: #4a5e52;
+	/* max-width: max-content; */
+	text-wrap: nowrap;
+	color: white;
+	padding: 10px;
+	position: relative;
+	left: -30px;
+}
+
+.card > #Heading2 h2 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.card > #Heading2 h2::after {
+	content: '';
+	background: url(/images/weather.png);
+	background-size: contain;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.card-content {
+	padding: 30px 0 20px;
+}
+
+.card-content .stat {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	padding-bottom: 5px;
+}
+
+.card-content .stat:last-child {
+	padding: 0;
+}
+
+.card-content .stat span:first-child {
+	text-align: end;
+}
+
+#Card-1 {
+	top: 0;
+	left: 0;
+}
+
+#Card-2 {
+	bottom: 0;
+	right: 0;
+}
+
+/* END OF MAIN STYLES */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* FOOTER STYLES */
+
+#FooterContainer {
+	background: var(--bg-color);
+	position: relative;
+	top: -4px;
+}
+
+#FooterContainer p {
+	text-align: center;
+	margin: 0;
+	color: white;
+}
+
+#FooterContainer #TopText p {
+	padding: 30px 0 10px;
+}
+
+#FooterContainer #BottomText p {
+	padding: 0 0 30px;
+}
+
+/* END OF FOOTER STYLES */
+
+@media (max-width: 800px) {
+	.card {
+		position: relative;
+		margin: auto;
+	}
+	#Card-1 {
+		margin-bottom: 30px;
+	}
+	/* img {
+		display: none;
+	} */
+	/* main {
+		background-image: url(/images/cornwall.jpg);
+		background-position: top right;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 30px 0;
+	} */
+	#FooterContainer {
+		padding: 0 10px;
+	}
+}
