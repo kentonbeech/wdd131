@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is showcasing a grid layout of a list of temples."
+    />
+    <meta name="author" content="Kenton Beech" />
+
+    <link rel="icon" href="/images/temple.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+
+    <title>LDS Temples</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="HeaderContainer">
+        <div id="HeaderTitle">
+          <h1>Temple Album</h1>
+        </div>
+
+        <nav>
+          <ul id="FilterButtons">
+            <li><a href="#" data-filter="home">Home</a></li>
+            <li><a href="#" data-filter="old">Old</a></li>
+            <li><a href="#" data-filter="new">New</a></li>
+            <li><a href="#" data-filter="large">Large</a></li>
+            <li><a href="#" data-filter="small">Small</a></li>
+          </ul>
+        </nav>
+
+        <div id="Hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="MainContent">
+        <div id="MainTitle">
+          <h2>Home</h2>
+        </div>
+
+        <div id="GridContainer"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="FooterContent">
+        <span id="TopRow">
+          <p>©<span id="currentyear"></span> 🍕 Kenton Beech 🍕 South Africa</p>
+        </span>
+
+        <span id="BottomRow">
+          <p>Last Modification: <span id="lastModified"></span></p>
+        </span>
+      </div>
+    </footer>
+
+    <div id="Lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="LightboxImg" />
+    </div>
+  </body>
+</html>
